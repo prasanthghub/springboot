@@ -3,7 +3,6 @@ pipeline {
 
   stages {
     stage('Checkout') {
-      agent { label 'git-node' }
       steps {
         git branch: 'main', url: 'https://github.com/prasanthghub/springboot.git'
       }
